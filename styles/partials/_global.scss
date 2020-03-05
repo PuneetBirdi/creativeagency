@@ -1,8 +1,46 @@
 
+
+html{
+    font-size: 62.5%;
+    color: $dark;
+    font-family: OpenSans, sans-serif;
+}
+
+body{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+}
+
 .wrapper{
     width: 80%;
     max-width: 1800px;
     display:flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 3.7rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+
+h2{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    letter-spacing: 1.8px;
+    padding: 20px 0px;
+}
+
+input{
+    border: none;
 }

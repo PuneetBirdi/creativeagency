@@ -1,0 +1,57 @@
+footer{
+    background-color: $dark;
+    color: $light;
+}
+
+footer section{
+    width:100%;
+    display: flex;
+    margin:75px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section div{
+    width: 30%;
+    height: 100%;
+}
+
+footer ul li{
+    list-style: inside;
+    margin-top: 1.0rem;
+}
+
+footer h2{
+    margin-bottom: 40px;
+}
+.footerContact{
+    line-height: 1.5rem;
+}
+
+.footerBlog h2{
+    text-align: center;
+}
+
+.footerSubscribe h2{
+    text-align: right;
+}
+
+.footerForm{
+    display: flex;
+    padding: 40px 0px;
+    justify-content: flex-end;
+}
+
+.footerForm p{
+    width: 100%;
+}
+
+input[type=email]{
+    padding: 10px 20px;
+}
+
+input[type=submit]{
+    border:none;
+    background-color: $accentColor;
+    padding: 10px 20px;
+}

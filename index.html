@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/611466b839.js" crossorigin="anonymous"></script>
     <title>Creative</title>
 </head>
 <body>
@@ -12,47 +13,118 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <a href="">
-                        <li>Home</li>
-                    </a>
-                    <a href="">
-                        <li>Blog</li>
-                    </a>
-                    <a href="">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="">
-                        <li>Creative</li>
-                    </a>
-                    <a href="">
-                        <li>Shop</li>
-                    </a>
-                    <a href="">
-                        <li>Contact</li>
-                    </a>
-                    <a href="">
-                        <li></li>
-                    </a>
-                    <a href="">
-                        <li></li>
-                    </a>
+                    <li><a href="">Home</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li class='navHeader'><h1>Creative</h1></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="/contactUs.html">Contact</a></li>
+                    <li class='navIcon'><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class='navIcon'><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class='brandingAndWebsite'>
         <div class="wrapper">
-            <div class="imgContainer">
-                <img src="./assets/home-2.jpeg" alt="Photo of a wooden desk with a cactus and computer sitting on it, in front of a white wall.">
-                <img src="./assets/home-circle-text.png" alt="">
+            <div class='contentContainer'>
+                <div class="imgContainer">
+                    <img src="./assets/home-2.jpeg" alt="Photo of a wooden desk with a cactus and computer sitting on it, in front of a white wall.">
+                    <img src="./assets/home-circle-text.png" alt="" class='overlayImg'>
+                </div>
+                <div class="infoContainer">
+                    <h2>Branding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem, suscipit deleniti accusamus minus nesciunt libero illum inventore eaque cupiditate!</p>
+                </div>
+                <div class="infoContainer">
+                    <h2>Design & Develop</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis nisi est ea ullam, autem commodi. Maiores veritatis aliquid dolores!</p>
+                </div>
             </div>
-            <div class="infoContainer">
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem, suscipit deleniti accusamus minus nesciunt libero illum inventore eaque cupiditate!</p>
+        </div>
+    </section>
+    <section class='gallery'>
+        <div class="wrapper">
+            <div class="contentContainer">
+                <div class='galleryArrow'>
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class='galleryContent'>
+                    <figure>
+                        <img src="./assets/home-3.jpeg" alt="" class='galleryImg'>
+                        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores velit accusamus provident totam possimus esse eum quos suscipit quisquam? Ipsum molestias in doloribus voluptates eaque ratione ducimus obcaecati et quos!</figcaption>
+                    </figure>
+                </div>
+                <div class='galleryArrow'>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
-            <div class="infoContainer">
-                <h3>Design & Develop</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quis nisi est ea ullam, autem commodi. Maiores veritatis aliquid dolores!</p>
+        </div>
+    </section>
+    <section class='services'>
+        <div class="wrapper">
+            <div class="gridContainer">
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>unique design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>seo marketing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi
+                            adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>retina ready</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi
+                            adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>ecommerce ready</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi
+                            adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>advanced options</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi
+                            adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+                <div class='gridItem'>
+                    <i class="fas fa-magic fa-2x"></i>
+                    <div class='gridItemContent'>
+                        <h2>customizable</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quaerat nihil error repellat. Sequi adipisci voluptatum tempore fugit explicabo recusandae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='teamProfile'>
+        <div class="wrapper">
+            <div class="gridContainer">
+                <div></div>
+                <div>
+
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </section>
@@ -61,20 +133,38 @@
 
         </div>
     </section>
-    <section>
+    <footer>
         <div class="wrapper">
-
+            <section>
+                <div class='footerContact'>
+                    <h2>contact us</h2>
+                    <p>
+                        6195 Orchard Street Toronto, Ontario <br>
+                        Email: contact@creative.com <br>
+                        Phone 01: 123-456-7890 <br>
+                        Phone 02: 123-456-7890 <br>
+                        Fax: 098-765-4321
+                    </p>
+                </div>
+                <div class='footerBlog'>
+                    <h2>recent posts</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="footerSubscribe">
+                    <h2>subscribe now</h2>
+                    <p>Sign up for emails and notifications below.</p>
+                    <form action="" class='footerForm'>
+                        <input type="email" placeholder="Enter your email"> <input type="submit" value="">
+                    </form>
+                </div>
+            </section>
         </div>
-    </section>
-    <section>
-        <div class="wrapper">
-
-        </div>
-    </section>
-    <section>
-        <div class="wrapper">
-
-        </div>
-    </section>
+    </footer>
 </body>
 </html>
