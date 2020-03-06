@@ -16,7 +16,7 @@ footer section div{
     height: 100%;
 }
 
-footer ul li{
+footer .footerBlog ul li{
     list-style: inside;
     margin-top: 1.0rem;
 }
@@ -26,6 +26,16 @@ footer h2{
 }
 .footerContact{
     line-height: 1.5rem;
+}
+
+.footerSocialMedia{
+    padding: 20px 0px;
+    list-style: none;
+    display: flex;
+}
+
+.footerSocialMedia li{
+    margin: 5px;
 }
 
 .footerBlog h2{
@@ -48,10 +58,24 @@ footer h2{
 
 input[type=email]{
     padding: 10px 20px;
+    width: 75%;
 }
 
 input[type=submit]{
     border:none;
     background-color: $accentColor;
     padding: 10px 20px;
+}
+
+
+.footerBranding{
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba(169, 169, 169, 0.3);
+    text-align: center;
+}
+
+.footerBranding h2{
+    margin: 0;
+    padding: 20px 0px;
 }
