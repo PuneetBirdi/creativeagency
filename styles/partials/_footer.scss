@@ -79,3 +79,19 @@ input[type=submit]{
     margin: 0;
     padding: 20px 0px;
 }
+
+@media (max-width: 1030px){
+    .footerBlog{
+        display: none;
+    }
+
+    .footerContact, .footerSubscribe{
+        width: 50%;
+    }
+}
+
+@media (max-width: 760px){
+    .footerContact,.footerSubscribe{
+        width: 100%;
+    }
+}

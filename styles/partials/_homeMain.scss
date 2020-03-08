@@ -32,6 +32,12 @@
     text-align: center;
 }
 
+@media(max-width: 540px){
+    .infoContainer {
+    width: 100%;
+    }
+}
+
 
 
 
@@ -71,6 +77,12 @@ figcaption{
     transform: scale(2);
 }
 
+@media(max-width: 1050px){
+    figcaption {
+    padding: 0px 25px;
+    }
+}
+
 
 // ---------------------SERVICES SECTION-------------------
 
@@ -106,6 +118,40 @@ figcaption{
     border: 3px solid $dark;
 }
 
+@media (max-width: 1500px){
+        .gridItemContent {
+        margin: 0px 15px;
+    }
+}
+
+
+@media (max-width: 1300px){
+        .gridItemContent {
+        margin: 0px 15px;
+    }
+
+    .services .gridItem {
+        margin: 15px 15px;
+        width: 45%;
+    }
+    .services .gridContainer {
+        width: 100%;
+        background-color: #ffffff9d;
+    }
+}
+
+@media (max-width: 850px){
+        .services .gridItem {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+        .gridContainer i {
+        display: none;
+    }
+}
+
 // ---------------------MEET OUR TEAM SECTION---------------
 
 
@@ -137,13 +183,35 @@ figcaption{
     min-width: 200px;
     margin: 15px;
     width: calc(25% - 30px);
-    max-width: calc(25%);
+    max-width: calc(25% -30px);
 }
 
 .gridSmall img{
     width: 100%;
 }
 
+
+@media (max-width: 1226px){
+    .gridLarge{
+        width: 100%;
+    }
+}
+
+@media (max-width: 936px){
+    .gridSmall{
+        width: calc(33% - 30px);
+    }
+    .gridContainer{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 660px){
+    .gridSmall{
+        width:100%;
+    }
+}
 
 
 
@@ -166,6 +234,10 @@ figcaption{
     align-items: center;
 }
 
+.portfolio h2{
+    margin-bottom: 40px;
+}
+
 
 .portfolioImg{
     width: 50%;
@@ -173,6 +245,24 @@ figcaption{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.portfolio button{
+    border:none;
+    background-color: $light;
+    padding: 20px 30px;
+    margin:20px;
+    font-family: Montserrat, sans-serif;
+    font-weight:bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.07rem;
+}
+
+
+
+
+
+
+
 
 
 
