@@ -256,6 +256,7 @@ h1 {
   font-size: 3.9rem;
   font-weight: bold;
   letter-spacing: 0.9px;
+  margin: 10px 0;
 }
 
 h2 {
@@ -264,6 +265,7 @@ h2 {
   font-weight: bold;
   letter-spacing: 0.9px;
   text-transform: uppercase;
+  margin: 10px 0;
 }
 
 h3 {
@@ -855,7 +857,7 @@ figcaption {
   margin-right: 20px;
 }
 
-.contactForm {
+.commentForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,12 +981,20 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactInfoItem {
   width: calc(33%-80px);
   padding: 0 40px;
+  min-width: 150px;
   border-right: 1px solid gray;
+}
+
+.contactSubmission {
+  margin: 20px 0;
+  width: 100%;
 }
 
 footer {
@@ -1191,6 +1201,12 @@ input[type=submit] {
 
 @media (max-width: 660px) {
   .gridSmall {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contactSectionHeader {
     width: 100%;
   }
 }
