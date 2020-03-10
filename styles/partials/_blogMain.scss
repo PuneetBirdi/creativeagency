@@ -1,0 +1,167 @@
+
+.allCaps{
+    text-transform: uppercase;
+    text-align:left;
+    font-size: 1.6rem
+}
+.blogContainer{
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom:60px;
+}
+
+.blogHeading{
+    width: 100%;
+    padding: 40px 0px;
+    margin: 20px 0px;
+}
+
+.blogMetaData, .commentHeader{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blogAuthor{
+    width: 50%;
+    display: flex;
+    flex-shrink: 3;
+    justify-content: flex-start;
+}
+.blogAuthor figure img{
+    border-radius: 50%;
+}
+
+.blogAuthor figcaption{
+    padding: 0px 20px;
+}
+
+.blogInfo{
+    width: calc(50%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogSocialMedia{
+    padding: 20px 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.blogSocialMedia li{
+    margin: 0 5px;
+}
+
+
+
+.sectionHeading{
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+
+.relatedBlogContainer, .commentSectionContainer, .submitCommentContainer{
+    width: 100%;
+}
+
+.commentSectionContainer{
+    margin-bottom: 60px;
+}
+
+.relatedPostsGallery{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.postLink{
+    width: calc(33% - 20px);
+    min-width: 300px;
+    margin: 10px;
+    display: flex;
+}
+
+.postLink figure{
+    width: 100%;
+    margin: 10px;
+}
+
+.postLink figcaption{
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+}
+
+
+
+.commentContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.commentBox{
+    background-color: $light;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.commentAuthor, .commentContent{
+    margin: 10px 0px;
+}
+
+.commentImg{
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+
+
+.contactForm{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.commentForm input[type=text],
+.commentForm input[type=email]
+.contactForm input[type=text],
+.contactForm input[type=email]{
+    width: 30%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+
+.commentForm input[type=text]:focus,
+.commentForm input[type=email]:focus,
+.contactForm input[type=text]:focus,
+.contactForm input[type=email]:focus,
+textarea:focus{
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    color: black;
+}
+
+textarea{
+    width: 100%;
+    margin: 40px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    resize:none;
+}
+
+label{
+    display: none;
+}
+
+.commentForm button{
+    background-color: none;
+}

@@ -235,7 +235,7 @@ body {
 
 .wrapper {
   width: 80%;
-  max-width: 1800px;
+  max-width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,12 +252,21 @@ a {
 
 h1 {
   font-family: Montserrat, sans-serif;
-  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-size: 3.9rem;
   font-weight: bold;
   letter-spacing: 0.9px;
 }
 
 h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 3.4rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+h3 {
   font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -268,6 +277,10 @@ h2 {
 
 input {
   border: none;
+}
+
+b {
+  font-weight: bold;
 }
 
 header {
@@ -397,10 +410,14 @@ nav a:hover {
       flex-shrink: 1;
 }
 
-.overlayImg {
+.brandingImg {
+  position: relative;
+}
+
+.brandingImg::before {
+  content: url(../assets/home-circle-text.png);
   position: absolute;
-  top: -75px;
-  left: 50px;
+  left: 40px;
 }
 
 .infoContainer {
@@ -582,6 +599,18 @@ figcaption {
   max-width: calc(25% -30px);
 }
 
+.gridLink {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .gridSmall img {
   width: 100%;
 }
@@ -657,6 +686,305 @@ figcaption {
   font-weight: bold;
   font-size: 1.4rem;
   letter-spacing: 0.07rem;
+}
+
+.allCaps {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.blogHeading {
+  width: 100%;
+  padding: 40px 0px;
+  margin: 20px 0px;
+}
+
+.blogMetaData, .commentHeader {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.blogAuthor {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blogAuthor figure img {
+  border-radius: 50%;
+}
+
+.blogAuthor figcaption {
+  padding: 0px 20px;
+}
+
+.blogInfo {
+  width: calc(50%/3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blogSocialMedia {
+  padding: 20px 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogSocialMedia li {
+  margin: 0 5px;
+}
+
+.sectionHeading {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.relatedBlogContainer, .commentSectionContainer, .submitCommentContainer {
+  width: 100%;
+}
+
+.commentSectionContainer {
+  margin-bottom: 60px;
+}
+
+.relatedPostsGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0px;
+}
+
+.postLink {
+  width: calc(33% - 20px);
+  min-width: 300px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.postLink figure {
+  width: 100%;
+  margin: 10px;
+}
+
+.postLink figcaption {
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+}
+
+.commentContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.commentBox {
+  background-color: #F6F6F6;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.commentAuthor, .commentContent {
+  margin: 10px 0px;
+}
+
+.commentImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentForm input[type=text],
+.commentForm input[type=email]
+.contactForm input[type=text],
+.contactForm input[type=email] {
+  width: 30%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.commentForm input[type=text]:focus,
+.commentForm input[type=email]:focus,
+.contactForm input[type=text]:focus,
+.contactForm input[type=email]:focus,
+textarea:focus {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  margin: 40px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  resize: none;
+}
+
+label {
+  display: none;
+}
+
+.commentForm button {
+  background-color: none;
+}
+
+.contactHeader nav {
+  background-color: white;
+  width: 100%;
+}
+
+.contactHeader {
+  background-color: white;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: auto;
+}
+
+.contactHeading {
+  width: 100%;
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+}
+
+.contactHeading h1 {
+  position: absolute;
+  line-height: 40px;
+  bottom: -36px;
+  left: 10%;
+}
+
+.contactUs {
+  margin: 125px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contactDetails {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactSectionHeader {
+  width: 45%;
+}
+
+.contactInfo {
+  margin: 75px 0;
+  width: 100%;
+}
+
+.contactInfoContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactInfoItem {
+  width: calc(33%-80px);
+  padding: 0 40px;
+  border-right: 1px solid gray;
 }
 
 footer {

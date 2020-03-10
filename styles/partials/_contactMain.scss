@@ -1,0 +1,66 @@
+.contactHeader nav{
+    background-color: white;
+    width: 100%;
+}
+
+.contactHeader{
+    background-color: white;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+}
+
+.contactHeading{
+    width: 100%;
+    background-image: url(../assets/contact-1.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    position:relative;
+}
+
+.contactHeading h1{
+    position: absolute;
+    line-height: 40px;
+    bottom: -36px;
+    left: 10%;
+}
+
+.contactUs{
+    margin: 125px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contactDetails{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.contactSectionHeader{
+    width: 45%;
+}
+
+.contactInfo{
+    margin: 75px 0;
+    width: 100%;
+}
+
+.contactInfoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfoItem{
+    width: calc(33%-80px);
+    padding: 0 40px;
+    border-right: 1px solid gray;
+}

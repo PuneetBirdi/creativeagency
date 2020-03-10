@@ -20,10 +20,15 @@
     justify-content: center;
     flex-shrink: 1;
 }
-.overlayImg{
-    position: absolute;
-    top: -75px;
-    left: 50px;
+
+.brandingImg{
+    position: relative;
+}
+
+.brandingImg::before{
+    content:url(../assets/home-circle-text.png);
+    position:absolute;
+    left: 40px;
 }
 
 .infoContainer{
@@ -184,6 +189,14 @@ figcaption{
     margin: 15px;
     width: calc(25% - 30px);
     max-width: calc(25% -30px);
+}
+
+.gridLink{
+    background-color: $light;
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
 }
 
 .gridSmall img{

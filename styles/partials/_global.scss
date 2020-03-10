@@ -14,7 +14,7 @@ body{
 
 .wrapper{
     width: 80%;
-    max-width: 1800px;
+    max-width: 1600px;
     display:flex;
     justify-content: center;
     margin: 0 auto;
@@ -27,12 +27,21 @@ a{
 
 h1{
     font-family: Montserrat, sans-serif;
-    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-size: 3.9rem;
     font-weight: bold;
     letter-spacing: 0.9px;
 }
 
 h2{
+    font-family: Montserrat, sans-serif;
+    font-size: 3.4rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+h3{
     font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -41,6 +50,12 @@ h2{
     padding: 20px 0px;
 }
 
+
+
 input{
     border: none;
+}
+
+b{
+    font-weight: bold;
 }
