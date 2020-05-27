@@ -56,9 +56,9 @@ footer h2{
     width: 100%;
 }
 
-input[type=email]{
+footer input[type=email]{
     padding: 10px 20px;
-    width: 75%;
+    width: 100%;
 }
 
 input[type=submit]{
@@ -78,6 +78,10 @@ input[type=submit]{
 .footerBranding h2{
     margin: 0;
     padding: 20px 0px;
+}
+
+.footerContact{
+    line-height: 2.0rem;
 }
 
 @media (max-width: 1030px){

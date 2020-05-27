@@ -463,7 +463,7 @@ figcaption {
 }
 
 .galleryArrow {
-  width: 10%;
+  width: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,11 +477,14 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .galleryArrow:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
+  cursor: pointer;
 }
 
 @media (max-width: 1050px) {
@@ -590,7 +593,7 @@ figcaption {
           justify-content: flex-end;
 }
 
-.gridLarge h2, .gridLarge p {
+.gridLarge h3, .gridLarge p {
   padding: 10px 20px 30px 20px;
 }
 
@@ -611,6 +614,23 @@ figcaption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .gridSmall img {
@@ -871,9 +891,17 @@ figcaption {
 .commentForm input[type=text],
 .commentForm input[type=email]
 .contactForm input[type=text],
-.contactForm input[type=email] {
+.contactForm input[type=email],
+.commentMeta,
+.contactMeta {
   width: 30%;
+  padding: 1.0rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 2.0rem 0;
+}
+
+.commentForm input[type=submit] {
+  margin: 2.0rem 0;
 }
 
 .commentForm input[type=text]:focus,
@@ -899,6 +927,10 @@ label {
 
 .commentForm button {
   background-color: none;
+}
+
+.timestamp {
+  color: lightgray;
 }
 
 .contactHeader nav {
@@ -1068,9 +1100,9 @@ footer h2 {
   width: 100%;
 }
 
-input[type=email] {
+footer input[type=email] {
   padding: 10px 20px;
-  width: 75%;
+  width: 100%;
 }
 
 input[type=submit] {
@@ -1089,6 +1121,10 @@ input[type=submit] {
 .footerBranding h2 {
   margin: 0;
   padding: 20px 0px;
+}
+
+.footerContact {
+  line-height: 2.0rem;
 }
 
 @media (max-width: 1030px) {

@@ -71,15 +71,17 @@ figcaption{
 }
 
 .galleryArrow{
-    width: 10%;
+    width: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
 }
 
 .galleryArrow:hover{
     transform: scale(2);
+    cursor: pointer
 }
 
 @media(max-width: 1050px){
@@ -180,7 +182,7 @@ figcaption{
     justify-content: flex-end;
 }
 
-.gridLarge h2, .gridLarge p{
+.gridLarge h3, .gridLarge p{
     padding: 10px 20px 30px 20px;
 }
 
@@ -197,6 +199,14 @@ figcaption{
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
+    align-content: center;
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .gridSmall img{

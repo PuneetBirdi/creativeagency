@@ -135,9 +135,17 @@
 .commentForm input[type=text],
 .commentForm input[type=email]
 .contactForm input[type=text],
-.contactForm input[type=email]{
+.contactForm input[type=email],
+.commentMeta,
+.contactMeta{
     width: 30%;
+    padding: 1.0rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    margin: 2.0rem 0;
+}
+
+.commentForm input[type=submit]{
+    margin: 2.0rem 0;
 }
 
 
@@ -164,4 +172,8 @@ label{
 
 .commentForm button{
     background-color: none;
+}
+
+.timestamp{
+    color: lightgray;
 }
